@@ -11,7 +11,7 @@ html {
 .container {
   /* background-color: red; */
   width: 80%;
-  /* untuk mebagi rata margin krin dan kanan dari ruang yg tersisa */
+  /* untuk membagi rata margin krin dan kanan dari ruang yg tersisa */
   /* bisa digunakan untuk blok elemen kayak div */
   margin-inline: auto;
 }
@@ -80,3 +80,54 @@ html {
 
 /* buat inspect bisa juga pake f12 */
 /* Navbar */
+
+/* Hero */
+.hero-box {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.577), rgba(0, 0, 0, 0.614)),
+    url(../../assets/images/hero.webp);
+  width: 100%;
+  border-radius: 25px;
+  padding: 100px 20px;
+  color: white;
+}
+
+.hero-box h1 {
+  margin-bottom: 20px;
+  /* defaulynya 28px */
+  font-size: 40px;
+}
+.hero-box p {
+  width: 500px;
+  line-height: 2;
+  margin-bottom: 30px;
+  opacity: 0.75;
+}
+.hero-box a {
+  text-decoration: none;
+  color: white;
+  background-color: indigo;
+  border-radius: 50px;
+  padding: 10px 25px;
+  font-size: 18px;
+  /* default anchor 16px kayak paragraf */
+}
+
+.hero-box a:hover {
+  background-color: rgb(90, 0, 154);
+}
+
+@media (max-width: 575px) {
+  .hero-box p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 475px) {
+  .hero-box h1 {
+    font-size: 30px;
+  }
+  .hero-box p {
+    font-size: 14px;
+  }
+}
+/* Hero */
